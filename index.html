@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SmartStudent AI</title>
+
+<style>
+body{
+font-family:Arial;
+background:#f4f6f8;
+text-align:center;
+margin:0;
+}
+
+header{
+background:#222;
+color:white;
+padding:40px;
+}
+
+section{
+padding:40px;
+}
+
+input,button{
+padding:12px;
+margin:10px;
+font-size:16px;
+}
+
+button{
+background:#007bff;
+color:white;
+border:none;
+cursor:pointer;
+}
+
+#result{
+margin-top:20px;
+font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>SmartStudent AI</h1>
+<p>AI помощник для подготовки к экзаменам</p>
+</header>
+
+<section>
+<h2>Попробовать сервис</h2>
+
+<input id="topic" placeholder="Введите тему экзамена">
+<br>
+<button onclick="generate()">Сгенерировать план</button>
+
+<p id="result"></p>
+</section>
+
+<section>
+<h2>Преимущества</h2>
+<p>✅ Экономия времени</p>
+<p>✅ Персональный план обучения</p>
+<p>✅ AI анализ материала</p>
+</section>
+
+<section>
+<h2>Как это работает</h2>
+<p>1. Введите тему</p>
+<p>2. AI анализирует данные</p>
+<p>3. Получите план подготовки</p>
+</section>
+
+<section>
+<h2>Контакты</h2>
+<p>Email: smart@student.kz</p>
+<p>Telegram: @smartstudent</p>
+</section>
+
+<script>
+function generate(){
+let topic =
+document.getElementById("topic").value;
+
+document.getElementById("result").innerText =
+"AI подготовил персональный план по теме: "
++ topic +
+". Изучите теорию, выполните практику и повторите ключевые темы.";
+}
+</script>
+
+</body>
+</html>
